@@ -23,6 +23,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".WorkActivity"
+            android:exported="true"
+            android:label="Work Activity"
+            android:theme="@style/Theme.Lab14Moviles" />
+
+        <activity
+            android:name=".StudyActivity"
+            android:exported="true"
+            android:label="Study" />
 
         <receiver
             android:name=".SimpleWidget"

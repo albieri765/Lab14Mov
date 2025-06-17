@@ -14,17 +14,17 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
-class MainActivity : ComponentActivity() {
+class StudyActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            HomeScreen()
+            StudyScreen()
         }
     }
 }
 
 @Composable
-fun HomeScreen() {
+fun StudyScreen() {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
@@ -33,7 +33,7 @@ fun HomeScreen() {
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
         ) {
             Text(
-                text = "¡Estás en la pantalla principal!",
+                text = "¡Estás en la pantalla de estudio!",
                 modifier = Modifier.padding(24.dp)
             )
         }
